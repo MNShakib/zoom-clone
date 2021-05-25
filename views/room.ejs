@@ -37,11 +37,17 @@
         </div>
         <div class="main__controls">
           <div class="main__controls__block">
-            <div class="main__controls__button">
+            <div
+              onclick="muteUnmute()"
+              class="main__controls__button main__mute_button"
+            >
               <i class="fas fa-microphone"></i>
               Mute
             </div>
-            <div class="main__controls__button">
+            <div
+              onclick="playStop()"
+              class="main__controls__button main__video_button"
+            >
               <i class="fas fa-video"></i>
               Stop Video
             </div>
@@ -75,7 +81,7 @@
           <h6 style="color: white">chat</h6>
         </div>
         <div class="main__chat_window">
-          <ul class="message"></ul>
+          <ul class="messages"></ul>
         </div>
         <div class="main__message_container">
           <input
