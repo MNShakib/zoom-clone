@@ -1,3 +1,20 @@
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
 body {
   margin: 0;
   padding: 0;
@@ -21,12 +38,14 @@ video {
 
 .main__left {
   flex: 0.8;
+  transition: 0.3s;
   display: flex;
   flex-direction: column;
 }
 
 .main__right {
   flex: 0.2;
+  transition: 0.3s;
 }
 
 .main__videos {
